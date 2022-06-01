@@ -1,6 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# install
 
-## Getting Started
+## Next.js + typescript
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+https://nextjs.org/docs/getting-started
+
+npx create-next-app@latest project-name --typescript
+npm run dev
+
+## Tailwind css
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+```js
+// tailwind.config.js file.
+module.exports = {
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {}
+  },
+  plugins: []
+}
+```
+
+```css
+/* ./styles/globals.css file. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+# Next.js Started
 
 First, run the development server:
 
