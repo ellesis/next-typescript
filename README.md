@@ -1,14 +1,13 @@
-# install
+> next.js + typescript + TailwindCss
 
-## Next.js + typescript
+# next.js + typescript + TailwindCss Dev Env
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-https://nextjs.org/docs/getting-started
+## Next.js + typescript - "next": "12.1.6"
 
 npx create-next-app@latest project-name --typescript
 npm run dev
 
-## Tailwind css
+## Tailwind css - "tailwindcss": "^3.0.24"
 
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
@@ -42,6 +41,9 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+https://nextjs.org/docs/getting-started
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
