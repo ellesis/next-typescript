@@ -1,10 +1,28 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { HiSearch, HiBell } from 'react-icons/hi'
+import { useState, useEffect } from 'react'
 
 function Header() {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <header>
+    <header className={`${isScrolled} && "bg-[#141414]"`}>
       <div className="flex items-center space-x-2 md:space-x-10">
         {/* logo */}
         <Image
